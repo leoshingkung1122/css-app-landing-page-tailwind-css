@@ -8,29 +8,44 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-50">
-    <header>
-      <nav class="bg-white w-full flex justify-between items-center p-4 rounded-full">
+  <body class="bg-[#F6F6FB] min-h-screen">
+    <!-- Navbar -->
+    <header class="w-full flex justify-center pt-6">
+      <nav class="bg-white w-[95%] flex flex-col md:flex-row justify-between items-center px-8 py-4 rounded-full shadow-sm">
         <div>
-          <span class="text-2xl font-bold text-indigo-950">Acme<sup class="text-indigo-600">•</sup></span>
+          <span class="text-2xl font-extrabold text-[#1A1A2C]">Acme<sup class="text-[#5E4AFF] text-base">•</sup></span>
         </div>
-        <ul class="flex gap-4  hover:text-indigo-600 hover:underline">
-          <li><a href="#" aria-current="page">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="flex gap-8 font-medium text-[#1A1A2C] overflow-hidden">
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Features</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="flex flex-col items-center align-baseline">
-      <section class="mt-20 gap-7 w-full flex flex-col items-center align-baseline">
-        <div>
-          <span class=" bg-violet-200  text-1xl font-bold text-indigo-600 text-center mb-4 p-2 rounded-full">🌈️ Acme Productivity App</span>
-        </div>
-        <h1 class="text-4xl font-bold text-indigo-950">Boost Your <strong class="text-blue-500">Product</strong>ivity</h1>
-        <p class="text-indigo-950 text-center w-full font-semibold">Streamline your workflow with our all-in-one productivity app.</p>
-        <button type="button" class="bg-gray-900 text-white px-9 py-4 rounded-2xl hover:bg-gray-600 focus:bg-gray-800 focus:outline-2 focus:outline-gray-600 focus:outline-offset-2 w-[187px]">Start Free Trial</button>
-      </section>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center mt-24">
+      <span class="bg-[#E0E0ED] text-[#5E4AFF] font-medium px-5 py-2 rounded-full mb-6 text-base flex items-center gap-2">
+        <span>🌈</span> Acme Productivity App
+      </span>
+      <h1 class="text-5xl font-extrabold text-[#1A1A2C] text-center mb-4 md:text-7xl overflow-hidden">
+        Boost Your <span class="text-[#5E4AFF]">Product</span>ivity
+      </h1>
+      <p class="text-xl text-[#1A1A2C] text-center mb-8 font-medium">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+      <button class="bg-[#1A1A2C] text-white px-8 py-3 rounded-xl font-semibold text-base shadow hover:bg-[#23233a] transition">
+        Start Free Trial
+      </button>
     </main>
   </body>
 </html>
