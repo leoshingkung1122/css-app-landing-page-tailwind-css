@@ -11,11 +11,11 @@
   <body class="bg-[#F6F6FB] min-h-screen">
     <!-- Navbar -->
     <header class="w-full flex justify-center pt-6">
-      <nav class="bg-white w-[95%] flex flex-row  justify-between items-center px-8 py-4 rounded-full shadow-sm">
+      <nav class="max-md:flex bg-white w-[95%] flex flex-row  justify-between items-center px-8 py-4 rounded-full shadow-sm">
         <div>
           <span class="text-2xl font-extrabold text-[#1A1A2C]">Acme<sup class="text-[#5E4AFF] text-base">•</sup></span>
         </div>
-        <ul class="flex flex-row gap-8 font-medium text-[#1A1A2C] overflow-hidden">
+        <ul class="max-md:hidden flex flex-row gap-8 font-medium text-[#1A1A2C] overflow-hidden">
           <li>
             <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Home</a>
           </li>
@@ -33,14 +33,14 @@
     </header>
 
     <!-- Hero Section -->
-    <main class="flex flex-col items-center mt-24">
-      <span class="bg-[#E0E0ED] text-[#5E4AFF] font-medium px-5 py-2 rounded-full mb-6 text-base flex items-center gap-2">
+    <main class="max-md:flex-col gap-2 flex flex-col items-center mt-10">
+      <span class="max-md:flex bg-[#E0E0ED] text-[#5E4AFF] font-medium px-5 py-2 rounded-full mb-2 text-base flex items-center gap-2">
         <span>🌈</span> Acme Productivity App
       </span>
-      <h1 class="text-5xl font-extrabold text-[#1A1A2C] text-center mb-4 md:text-7xl overflow-hidden">
+      <h1 class="max-md:flex-col text-5xl font-extrabold text-[#1A1A2C] text-center mb-3 md:text-7xl ">
         Boost Your <span class="text-[#5E4AFF]">Product</span>ivity
       </h1>
-      <p class="text-xl text-[#1A1A2C] text-center mb-8 font-medium">
+      <p class="max-md:flex-col mt-4 text-xl text-[#1A1A2C] text-center mb-8 font-medium">
         Streamline your workflow with our all-in-one productivity app.
       </p>
       <button class="bg-[#1A1A2C] text-white px-8 py-3 rounded-xl font-semibold text-base shadow hover:bg-[#23233a] transition">
